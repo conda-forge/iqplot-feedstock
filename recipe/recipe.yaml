@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: 0.3.7
+  version: "0.3.9"
 
 package:
   name: iqplot
@@ -9,10 +9,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/i/iqplot/iqplot-${{ version }}.tar.gz
-  sha256: 8e5634bb9f88c3485790d0dc6953043e7115db1cefcbdebc116d100bde7829e0
+  sha256: 7f27c4e29b47d592d8e833c921a2507fddf3e05805516e7b3963947c45f24161
 
 build:
-  number: 2
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
